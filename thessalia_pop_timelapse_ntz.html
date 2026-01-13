@@ -325,7 +325,7 @@
    * IMPORTANT: Column names are case-sensitive! Make sure they match exactly.
    * 🌍 Change 'XXX' with the 4 column names with the population data per year (i.e. 'POP1991')
    */  
-  const YEAR_COLUMNS = ['XXXX', 'XXXX', 'XXXX', 'XXXX'];
+  const YEAR_COLUMNS = ['POP1991', 'POP2001', 'POP2011', 'POP2021'];
   
   /**
    * YEARS: Array of the actual year values that correspond to each column
@@ -350,7 +350,7 @@
    * For external hosting:
    *    - Use full URL like 'https://example.com/data/file.geojson'
    */
-  const DATA_PATH = 'DATA FOLDER NAME ON GITHUB/GEOJSON FILE NAME';
+  const DATA_PATH = 'pop_1991-2021.geojson';
   
   /**
    * BOUNDARIES_PATH: Location of your GeoJSON file with polygon boundaries
@@ -362,7 +362,7 @@
    * population circles, providing geographic context.
    * 🌍 Change this to point to YOUR boundary file
    */
-  const BOUNDARIES_PATH = 'DATA FOLDER NAME ON GITHUB/GEOJSON FILE NAME';
+  const BOUNDARIES_PATH = 'dimoi.geojson';
 
   // ============================================================
   // 2. MAP INITIALIZATION
@@ -392,8 +392,8 @@
   let map = new maplibregl.Map({
     container: 'map',           // HTML element ID to render map in (don't change this)
     style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json', // Default basemap style
-    center: [27.4, 33.6],       // 🌍 [longitude, latitude] - CHANGE THIS TO MATCH THE STUDY AREA CENTER (APPROXIMATELY)!
-    zoom: 10                     // 🌍 Initial zoom level - CHANGE THIS SO THAT THE REQUIRED ZOOM LEVEL ENCOMPASSES THE ENTIRE STUDY AREA. SMALLER VALUES - ZOOM OUT!
+    center: [22.4, 39.6],       // 🌍 [longitude, latitude] - CHANGE THIS TO MATCH THE STUDY AREA CENTER (APPROXIMATELY)!
+    zoom: 8                     // 🌍 Initial zoom level - CHANGE THIS SO THAT THE REQUIRED ZOOM LEVEL ENCOMPASSES THE ENTIRE STUDY AREA. SMALLER VALUES - ZOOM OUT!
   });
 
   // ============================================================
@@ -1273,5 +1273,6 @@
 -->
 </body>
 </html>
+
 
 
