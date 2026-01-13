@@ -174,7 +174,7 @@
 <!-- 🌍 When you change a basemap (the link) you should also change the name of the basemap you select (i.e., Light, Dark) inside the >...< -->
 <!-- Allows user to switch between Light and Dark background maps -->
 <select id="styleSelector" style="position:absolute;top:10px;left:10px;z-index:3;padding:5px;border-radius:3px;">
-  <option value="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json">Light</option>
+  <option value="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json" selected>Light</option>
   <option value="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json">Dark</option>
   <!-- 🗺️ Add more basemap options like this:
   <option value="URL_TO_BASEMAP_STYLE">Your Basemap Name</option>
@@ -391,7 +391,7 @@
    */
   let map = new maplibregl.Map({
     container: 'map',           // HTML element ID to render map in (don't change this)
-    style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json', // Default basemap style
+    style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json', // Default basemap style
     center: [22.4, 39.6],       // 🌍 [longitude, latitude] - CHANGE THIS TO MATCH THE STUDY AREA CENTER (APPROXIMATELY)!
     zoom: 8                     // 🌍 Initial zoom level - CHANGE THIS SO THAT THE REQUIRED ZOOM LEVEL ENCOMPASSES THE ENTIRE STUDY AREA. SMALLER VALUES - ZOOM OUT!
   });
@@ -1273,6 +1273,7 @@
 -->
 </body>
 </html>
+
 
 
 
