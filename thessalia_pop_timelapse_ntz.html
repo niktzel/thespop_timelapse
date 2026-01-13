@@ -262,13 +262,13 @@
   <!-- 🌍 Speed control - how fast animation plays (in milliseconds per frame) -->
   <!-- You may test a minimum (min) value of 200 and a maximum (max) value of 2000 -->
   <div class="control-label">Speed (ms/frame):</div>
-  <input type="range" min="XXX" max="XXX" value="1000" step="100" id="speedSlider">
+  <input type="range" min="100" max="2000" value="1000" step="100" id="speedSlider">
   <span class="control-value" id="speedLabel">1000</span> ms<br>
   
   <!-- 🌍 Max circle radius - controls maximum size of circles -->
   <!-- You may test a minimum (min) value of 40 and a maximum (max) value of 150 -->
   <div class="control-label">Max Circle Radius (px):</div>
-  <input type="range" min="XX" max="XXX" value="100" id="maxRadiusSlider">
+  <input type="range" min="10" max="300" value="100" id="maxRadiusSlider">
   <span class="control-value" id="maxRadiusValue">100</span> px<br>
   
   <!-- 🗺️ Opacity control - transparency of circles (0% = invisible, 100% = solid) -->
@@ -861,16 +861,16 @@
     // These are the population values shown in the legend
     // Adjust them to make sense for your study area
     
-    const value1 = XXX;      // 🌍 Smallest circle
-    const value2 = XXXXX;     // 🌍 Small-medium circle
-    const value3 = XXXXX;     // 🌍 Medium-large circle
-    const value4 = XXXXXX;    // 🌍 Largest circle
+    const value1 = 5;      // 🌍 Smallest circle
+    const value2 = 15;     // 🌍 Small-medium circle
+    const value3 = 35;     // 🌍 Medium-large circle
+    const value4 = 70;    // 🌍 Largest circle
     
     // 🌍 Define the text labels that appear for each circle
-    const label1 = "X,XXX";
-    const label2 = "XX,XXX";
-    const label3 = "XX,XXX";
-    const label4 = "XXX,XXX";
+    const label1 = "500";
+    const label2 = "8000";
+    const label3 = "40000";
+    const label4 = "80000";
     
     // Examples for different contexts:
     // 
@@ -1273,6 +1273,7 @@
 -->
 </body>
 </html>
+
 
 
 
